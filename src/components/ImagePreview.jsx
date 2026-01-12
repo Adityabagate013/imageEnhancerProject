@@ -18,7 +18,7 @@ const ImagePreview = (props) => {
         </h2>
 
         {props.uploaded ? (
-          <img src={props.uploaded} alt="" className='w-full h-full object-cover' />
+          <img src={props.uploaded} alt="" className='w-full h-full object-contain' />
         ) : (
           <div className='flex items-center justify-center h-80 bg-gray-200'>
             No Image Selected
@@ -37,7 +37,7 @@ const ImagePreview = (props) => {
           <img
             src={props.enhanced}
             alt="enhancedImage"
-            className='w-full h-full object-cover'
+            className='w-full h-full object-contain'
             onLoad={() => setEnhancedLoaded(true)}
             style={{ display: enhancedLoaded ? 'block' : 'none' }}
           />
