@@ -10,7 +10,7 @@ const ImagePreview = (props) => {
   }, [props.enhanced]);
 
   return (
-    <div className='mt-8 grid-cols-1 md:grid-cols-2 gap-6 w-full max-x-4xl'>
+    <div className='mt-8 gap-6 w-full max-x-4xl'>
       {/* Original Image */}
       <div className='bg-white shadow-lg rounded-xl ovreflow-hidden mb-10'>
         <h2 className='flex text-xl font-semibold text-center bg-gray-800 text-white py-2'>
